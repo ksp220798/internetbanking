@@ -34,7 +34,7 @@ public class Statement1 extends HttpServlet
   try{
     PreparedStatement ps=con.prepareStatement("select *from atransact where transaction_date between '"+sdate+"' and '"+edate+"' and accno="+accno);
     ResultSet rs=ps.executeQuery();
-    pw.println("<body bgcolor=red text=blue>"); 
+    pw.println("kundan<body bgcolor=red text=blue>"); 
     pw.println("<h2> Query Datails</h2>");
     pw.println("<table bgcolor=cyan border=2>");
 
